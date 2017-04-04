@@ -1,0 +1,39 @@
+<ion-side-menus >
+    <ion-pane>
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-dark">
+
+            </ion-nav-bar>
+            <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+        </ion-side-menu-content>
+        <ion-side-menu side="left">
+            <ion-header-bar class="bar bar-header bar-dark">
+                <h1 class="title">Menu</h1>
+            </ion-header-bar>
+            <ion-content has-header="true">
+                <!--<ion-list>
+                    <ion-item href="#/" >Home</ion-item>
+                </ion-list>-->
+                <div class="list">
+                    <div class="card">
+                        <div class="item item-avatar" >
+                            <img src="..\img\imane.PNG" >
+                            <div>
+                                {{memberInfo.login}} <br>
+                                {{memberInfo.email}} <br>
+                                {{memberInfo.tel}} <br>
+                                {{memberInfo.BU}} <br>
+                                {{memberInfo.job}} <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ion-list>
+                        <ion-item ng-click="logout()"><i class="icon ion-android-exit placeholder-icon"></i>Logout</ion-item>
+                        <ion-item><i class="icon ion-android-car placeholder-icon"></i>My rides</ion-item>
+                    </ion-list>
+                </div>
+            </ion-content>
+        </ion-side-menu>
+    </ion-pane>
+</ion-side-menus>
